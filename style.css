@@ -36,7 +36,7 @@ html,body{
     padding: 0 2vw;
 }
 nav{
-    padding: 2vw 0vw;
+    padding: 5vw 0vw;
     height: 100px;
     width: 100%;
     display: flex;
@@ -87,7 +87,7 @@ nav h3{
     color: white;
 }
 #center{
-    height: 65vh;
+    height: 75vh;
     width: 100%;
     /* background-color: orangered; */
     display: flex;
@@ -117,7 +117,7 @@ nav h3{
     width: 46vw;
     height: 36vw;
     right: 0;
-    top: 65vh;
+    top: 85vh;
 }
 #hero-1{
     height: 100%;
@@ -133,7 +133,7 @@ nav h3{
     width: 30vw;
     background: linear-gradient(#FE330A,#fe740a);
     border-radius: 50%;    
-    filter: blur(25px);
+    filter: blur(30px);
     position: absolute;
     animation-name: anime2;
     animation-duration: 5s;
@@ -146,7 +146,7 @@ nav h3{
     width: 30vw;
     background: linear-gradient(#FE330A,#fe740a);
     border-radius: 50%;
-    filter: blur(25px);
+    filter: blur(30px);
     position: absolute;
     animation-name: anime1;
     animation-duration: 5s;
@@ -265,6 +265,19 @@ nav h3{
         transform: translate(-10%,10%) skew(-12deg);
     }
 }
+#effect-lower-text{
+    display: flex;
+    align-items: center;
+    padding: 25vw 0 0 2vw;
+}
+#elt1{
+    height: 10px;
+    width: 10px;
+    margin: 0 10px;
+}
+#elt2{
+    font-weight:lighter;
+}
 #page3{
     min-height: 100vh;
     width: 100%;
@@ -363,150 +376,22 @@ nav h3{
 }
 #footer h1{
     font-size: 23vw;
-}
-#footer-div{
-    height: 20vh;
-    width: 100%;
-
+    margin-top: 10vh;
 }
 #footer-bottom{
-    border-top: 1px solid white;
-    height: 10vh;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.372);
+    height: 3vh;
     width: 100%;
 }
-
-@media (max-width: 1024px) {
-    #center h1 {
-        font-size: 15vw;
-        line-height: 12vw;
-    }
-    #center h3, #left h3 {
-        font-size: 3vw;
-        width: 50%;
-    }
-    #nav-part2 h4 {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-    #hero-shape {
-        width: 60vw;
-        height: 50vw;
-    }
-    #hero-1, #hero-2, #hero-3 {
-        height: 40vw;
-        width: 40vw;
-    }
-    #page2-bottom h1 {
-        font-size: 6vw;
-        line-height: 6vw;
-        width: 80%;
-    }
-    #page2-card {
-        width: 40%;
-    }
-    .elem h2 {
-        font-size: 5vw;
-    }
-    #fixed-image {
-        height: 40vw;
-        width: 30vw;
-    }
-    #footer h1 {
-        font-size: 30vw;
-    }
+#footer-bottom-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        height: auto;
-    }
-    #nav-part2 h4 {
-        padding: 5px 10px;
-        font-size: 12px;
-    }
-    #center {
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 4vw;
-    }
-    #center h1 {
-        font-size: 12vw;
-        line-height: 10vw;
-        text-align: center;
-    }
-    #left h3 {
-        font-size: 5vw;
-        line-height: 5vw;
-        width: 100%;
-        text-align: center;
-    }
-    #hero-shape {
-        width: 80vw;
-        height: 60vw;
-    }
-    #hero-1, #hero-2, #hero-3 {
-        height: 50vw;
-        width: 50vw;
-    }
-    #page2-bottom {
-        flex-direction: column;
-        align-items: center;
-        padding: 8vw 0;
-    }
-    #page2-bottom h1 {
-        font-size: 8vw;
-        line-height: 8vw;
-        width: 90%;
-        text-align: center;
-    }
-    #page2-card {
-        width: 60%;
-    }
-    #footer {
-        padding: 2vw 3vw;
-    }
-    #footer h1 {
-        font-size: 50vw;
-        text-align: center;
-    }
+#loader{
+    position: absolute;
+    display: flex;
 }
-
-@media (max-width: 480px) {
-    #nav-part2 {
-        flex-direction: column;
-        gap: 1vw;
-    }
-    #nav-part2 h4 {
-        padding: 4px 8px;
-        font-size: 10px;
-    }
-    #center {
-        height: auto;
-        padding-bottom: 6vw;
-    }
-    #center h1 {
-        font-size: 18vw;
-        line-height: 16vw;
-    }
-    #left h3 {
-        font-size: 6vw;
-        line-height: 6vw;
-    }
-    #page2-bottom {
-        padding: 10vw 0;
-    }
-    #page2-bottom h1 {
-        font-size: 10vw;
-        line-height: 10vw;
-    }
-    #page2-card {
-        width: 80%;
-    }
-    #footer {
-        padding: 4vw 3vw;
-    }
-    #footer h1 {
-        font-size: 60vw;
-    }
+#loader-left{
+    justify-content: flex-start;
 }
